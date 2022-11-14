@@ -4,7 +4,7 @@ const port = 5000;
 const svgCaptcha = require('svg-captcha');
 
 app.get('/', (req, res) => {
-  res.send('Ngoc Tuan 2022!');
+  res.send('Copyright (c) 2022 Ngoc Tuan');
 })
 
 app.get('/captchapreview', function (req, res) {
@@ -40,5 +40,5 @@ app.get('/captcha', function (req, res) {
 });
 
 app.listen(process.env.PORT || port, () => {
-  console.log(`Example app listening on port ${port}`);
+  console.log(`Svg captcha app listening on port ${port}`);
 })
