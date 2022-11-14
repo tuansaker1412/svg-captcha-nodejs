@@ -16,10 +16,6 @@ app.get('/captchapreview', function (req, res) {
   });
 
   res.type('svg');
-  let data = {
-    data: captcha.data,
-    text: captcha.text,
-  }
   res.status(200).send(captcha.data);
 });
 
