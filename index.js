@@ -11,7 +11,7 @@ app.get('/captchapreview', function (req, res) {
   let captcha = svgCaptcha.create({
     size: req.query.size || 6,
     noise: req.query.noise || 1,
-    color: req.query.color || true,
+    color: req.query.color,
     charPreset: req.query.charPreset,
   });
 
@@ -23,7 +23,7 @@ app.get('/captcha', function (req, res) {
   let captcha = svgCaptcha.create({
     size: req.query.size || 6,
     noise: req.query.noise || 1,
-    color: req.query.color || true,
+    color: req.query.color,
     charPreset: req.query.charPreset,
   });
 
