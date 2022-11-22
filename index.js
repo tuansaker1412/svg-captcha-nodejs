@@ -2,6 +2,9 @@ const express = require('express');
 const app = express();
 const port = 5000;
 const svgCaptcha = require('svg-captcha');
+const cors = require('cors');
+
+app.use(cors(/.*/))
 
 app.get('/', (req, res) => {
   res.send('Copyright (c) 2022 Ngoc Tuan');
