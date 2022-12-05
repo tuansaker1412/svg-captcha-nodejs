@@ -14,6 +14,6 @@ run: npm start
 ----
 #### demo: https://svg-captcha.herokuapp.com/captchapreview?size=6&color=true&charPreset=1234567890
 ----
-#### sample image
+#### sample image demo
 
 ![image](media/demo.png)
